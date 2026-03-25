@@ -95,11 +95,3 @@ The user drives convergence. Don't pick winners — give enough material to pick
 - Push range — include unconventional/provocative directions.
 - Don't converge for the user. Present material, let them judge.
 
-## Linking
-
-All output files use `[[wikilinks]]` so Obsidian builds a connected graph:
-
-- **Frame → prior work:** frame files link to any `thinking/` or `research/` files that informed framing: `[[thinking/...]]`, `[[research/...]]`
-- **Concept → frame:** when Phase 3 concepts are saved, they link back to their frame: `[[frame-<slug>]]`
-- **Across frames:** only link frames that are actually connected — don't link unrelated frames just because they exist in the same project
-- **No speculative links** — only link to files that actually exist or were created in this session

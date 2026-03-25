@@ -93,16 +93,6 @@ Start the file with an H1 title that summarizes the session content (not the fil
 - **Changes made** — what was modified, or "None"
 - **Open threads** — anything surfaced but not resolved
 
-## Linking
-
-All output files use `[[wikilinks]]` so Obsidian builds a connected graph:
-
-- **Session → research:** session notes link to any `research/` files they reference or spawned: `[[research/topic-slug]]`
-- **Session → changed files:** session notes link to any files modified during Act: `[[path/to/file]]`
-- **Research → session:** research files link back to the session that triggered them: `[[thinking/YYYY-MM-DD-topic-slug]]`
-- **Inline references:** when referencing existing files from CWD during analysis, use wikilinks (e.g., `[[src/auth/tokens.ts]]`)
-- **No speculative links** — only link to files that actually exist or were created in this session
-
 ## Rules
 
 - Be direct. No preamble, no filler. Labeled bullets for discrete items, prose for narrative.
