@@ -3,8 +3,6 @@ name: thinking-partner
 description: Use when you need to reason through a decision, understand a problem, explore a hunch, or compare options — works with or without existing project context
 ---
 
-**Workflow context:** Thinking partner — works before, during, or between any work. Adapts to whatever context exists.
-
 ## 1. Read context
 
 Read any relevant files in CWD that the user references or that relate to the topic — code, docs, notes, research, plans. Note what exists and what doesn't — this determines behavior.
