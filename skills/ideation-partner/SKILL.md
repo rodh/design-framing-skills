@@ -45,7 +45,7 @@ When questioning is complete, produce a compact **problem frame**.
 
 **Optional extras:** additional sections that emerge from the conversation (e.g., prior art, stakeholder dynamics, regulatory context). Include when the conversation surfaced them; omit when it didn't.
 
-Save the problem frame to `frame-<brief-slug>.md` in the current directory (e.g., `frame-onboarding-flow.md`, `frame-search-relevance.md`). Derive the slug from the core problem — keep it to 2–4 hyphenated words. Start the file with an H1 title: `# Frame: <descriptive title>` (e.g., `# Frame: Onboarding Flow for Enterprise Users`). Then move to Phase 2.
+Save the problem brief to `brief-<slug>.md` in the current directory (e.g., `brief-onboarding-flow.md`, `brief-search-relevance.md`). Derive the slug from the core problem — keep it to 2–4 hyphenated words. Start the file with an H1 title: `# Brief: <descriptive title>` (e.g., `# Brief: Onboarding Flow for Enterprise Users`). Then move to Phase 2.
 
 ---
 
