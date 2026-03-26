@@ -8,7 +8,7 @@ AI coding agent skills for the full design framing loop — reason through decis
 
 **`/ideation-partner`** — Explore a problem space and generate genuinely different solution directions. Works from tickets, notes, screenshots, or a verbal description. Asks targeted questions to frame the problem, then produces multiple distinct concepts — not variations on one idea.
 
-### New skills
+### Experimental skills
 
 **`/next-move-partner`** — Scan your design artifacts and recommend the highest-leverage next step. Shows a compact status map of what exists and what's missing, then suggests which skill to invoke and with what input. A quick diagnostic, not a workflow.
 
