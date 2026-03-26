@@ -28,7 +28,7 @@ Classify the request from `$ARGUMENTS` and context.
 
 **STOP after Frame** (Hunch/What-if/Decision only). Present the framed output and wait for the user to confirm or adjust before proceeding to Think.
 
-If ambiguous, ask one interactive question (`AskUserQuestion` or `requestUserInput`): **A. Surface something** (hunch), **B. Explore a what-if**, **C. Decide between options**. If the request is primarily about understanding context (a ticket, task, or project), redirect to `/orient-partner`. If the request is primarily research-oriented ("look into X", "how does Y work"), redirect to `/research-partner`.
+If ambiguous, ask one interactive question (`AskUserQuestion` or `requestUserInput`): **A. Surface something** (hunch), **B. Explore a what-if**, **C. Decide between options**. If the request doesn't fit any of these patterns — it's really about understanding context rather than reasoning through a decision — say so and let the user decide how to proceed.
 
 ## 3. Think
 

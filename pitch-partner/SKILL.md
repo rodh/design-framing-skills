@@ -61,7 +61,7 @@ Produce the artifact in the agreed format:
 - Context (link to brief/concept, key constraints)
 - Size estimate if scoping exists
 
-Pitch tickets frame the problem for stakeholder understanding. For implementation-ready tickets with dependencies and sizing, use `/scoping-partner`.
+Pitch tickets frame the problem for stakeholder understanding, not implementation detail. Implementation-ready tickets with dependencies and sizing are a separate step.
 
 **Talking points:**
 - Opening — what to lead with (1-2 sentences)

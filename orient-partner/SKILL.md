@@ -31,11 +31,12 @@ Four-part analysis:
 
 Present a scoped problem statement with 2-3 labeled next moves reflecting the actual situation. Suggest downstream skills as appropriate:
 
-- `/reasoning-partner` for decisions or stress-testing assumptions
-- `/research-partner` for deeper investigation
-- `/ideation-partner` for exploring solution directions
-- `/wireframing-in-forma` or `/frontend-design` for design tasks (UI, layouts, components)
-- `/scoping-partner` for breaking work into prioritized tiers
+- Reasoning through a decision or stress-testing assumptions (`/reasoning-partner` if available)
+- Deeper investigation into unknowns (`/research-partner` if available)
+- Exploring solution directions (`/ideation-partner` if available)
+- Breaking work into prioritized scope (`/scoping-partner` if available)
+
+Or suggest `/next-move-partner` to help the user decide what's next.
 
 **Stop and wait.**
 
@@ -74,7 +75,7 @@ All file paths in this skill use `topics/<topic>/` as the root.
 - Quote sources, don't summarize — the user needs to see exactly what you're referencing.
 - Steel-man all positions. Don't lead the user toward a predetermined answer.
 - Prefer labeled options (A/B/C) over open-ended questions — reduces friction and shows you've done enough thinking to enumerate the space.
-- If decomposition reveals that research is needed before understanding is possible, say so and suggest `/research-partner`. Don't fake understanding with shallow analysis.
+- If decomposition reveals that research is needed before understanding is possible, say so. Don't fake understanding with shallow analysis.
 - Artifacts must be self-contained. Someone reading the file with no conversation context should understand the decomposition.
 
 $ARGUMENTS

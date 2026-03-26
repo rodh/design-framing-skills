@@ -75,7 +75,7 @@ Structure:
 - **Deferred items** — nice-to-haves with rationale for deferral
 - **Open questions** — unknowns that need spikes or decisions before work starts
 
-**Anti-pattern: "Scope the whole vision."** Scoping works on a chosen direction, not a feature wish list. If you haven't converged on a direction, run `/ideation-partner` first. Scoping an unconverged design produces tickets nobody builds.
+**Anti-pattern: "Scope the whole vision."** Scoping works on a chosen direction, not a feature wish list. If the input hasn't converged on a direction, say so — the user needs to explore and converge before scoping will be productive.
 
 ## Topic Folder Convention
 
@@ -94,7 +94,7 @@ All file paths in this skill use `topics/<topic>/` as the root.
 - One question per (`AskUserQuestion` or `requestUserInput`) call.
 - MVP is the smallest thing that works, not the smallest thing you can ship. "Works" means a user can accomplish the core task end-to-end.
 - Don't pad MVP with "foundation" work that doesn't deliver user value. Infrastructure belongs in tickets, not tier justifications.
-- If the source artifacts are too vague to scope concretely, say so. Recommend `/orient-partner` to understand the problem or `/ideation-partner` to explore directions rather than guessing.
+- If the source artifacts are too vague to scope concretely, say so — name what's missing (problem understanding, direction convergence, or both) rather than guessing.
 - T-shirt sizes are rough signals, not commitments. Don't pretend to precision you don't have.
 
 $ARGUMENTS
