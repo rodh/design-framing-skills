@@ -5,10 +5,10 @@ description: Use when you want to know what design move to make next — unclear
 
 ## 1. Scan
 
-Scan CWD for all design artifacts:
+Scan `topics/` for all topic folders. Within each, identify artifacts by filename prefix:
 
-- `thinking/` session notes
-- `research/` findings
+- `thinking-*.md` session notes
+- `research-*.md` findings
 - `brief-*.md` problem briefs
 - `concept-*.md` concept explorations
 - `wireframes-*.md` wireframes
@@ -16,23 +16,30 @@ Scan CWD for all design artifacts:
 - `personas-*.md` persona definitions
 - `scope-*.md` scoping documents
 - `pitch-*.md` / `ticket-*.md` pitch artifacts
-- READMEs, docs, plans, tickets, or other project context
+
+Also scan CWD for READMEs, docs, plans, tickets, and other project context.
 
 Read each artifact's title and opening section — enough to know what it covers, not a deep read. Note what exists, what's missing, and what looks stale (e.g., a brief that predates significant thinking sessions).
 
 ## 2. Status map
 
-Present a compact status map. One line per artifact category, showing what exists and its state:
+Present a compact status map grouped by topic folder, showing what exists and its state within each:
 
 ```
-Thinking    2 sessions (auth-flow, onboarding-risks)
-Research    1 finding (competitor-patterns)
-Brief       1 (onboarding-flow) — aligns with latest thinking
-Concepts    None
-Wireframes  None
-Testing     None
-Scoping     None
-Pitches     None
+prompt-specificity/
+  Brief       1 (prompt-specificity)
+  Thinking    1 session (prompt-ranges)
+  Research    1 (user-intent-taxonomy)
+  Concepts    1 (progressive-elicitation)
+  Scoping     None
+  Pitches     None
+
+interaction-patterns/
+  Brief       1 (interaction-patterns)
+  Thinking    1 session (canvas-vs-chat)
+  Concepts    None
+  Scoping     None
+  Pitches     None
 ```
 
 Keep it tight — this is a glanceable dashboard, not a report.
@@ -41,13 +48,13 @@ Keep it tight — this is a glanceable dashboard, not a report.
 
 Based on the status map, recommend the **single highest-value next move** with brief reasoning. Follow a natural design progression but respond to the actual state, not a rigid sequence:
 
-- Brief exists but no concepts? Ideation gives you directions to evaluate.
-- Concepts exist but assumptions are untested? A thinking session on the riskiest bet would help.
+- Brief exists but no concepts? Ideation gives you directions to evaluate — e.g., "Run `/ideation-partner` to explore directions for prompt-specificity."
+- Concepts exist but assumptions are untested? A thinking session on the riskiest bet would help — e.g., "Run `/thinking-partner` to stress-test the progressive-elicitation concept."
 - Wireframes exist but haven't been validated? User testing would surface problems before you scope.
-- Design is validated but not scoped? Scoping breaks it into buildable pieces.
+- Design is validated but not scoped? Scoping breaks it into buildable pieces — e.g., "Run `/scoping-partner` on the interaction-patterns concept."
 - Work is scoped but stakeholders haven't bought in? A pitch gets alignment.
 
-Name the specific skill to invoke and suggest input — e.g., "Run `/ideation-partner` with the onboarding brief as input."
+Name the specific skill to invoke, reference the topic context, and suggest input.
 
 If the user has a different instinct, respect it. This skill advises — it doesn't dictate.
 

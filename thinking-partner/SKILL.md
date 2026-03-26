@@ -5,7 +5,7 @@ description: Use when you need to reason through a decision, understand a proble
 
 ## 1. Read context
 
-Scan CWD for context related to the topic: code, docs, existing `thinking/` sessions, `research/` artifacts, plans, and recent commits. Read what's relevant — don't deep-read everything. Note what exists and what's absent; both inform the Frame. If the user references specific files, prioritize those.
+Scan CWD for context related to the topic: code, docs, existing `topics/*/thinking-*.md` sessions, `topics/*/research-*.md` artifacts, plans, and recent commits. Read what's relevant — don't deep-read everything. Note what exists and what's absent; both inform the Frame. If the user references specific files, prioritize those.
 
 ## 2. Frame
 
@@ -13,7 +13,7 @@ Detect the thinking pattern from `$ARGUMENTS` and context.
 
 **Orient ("help me understand this ticket/problem"):**
 - Triggered by: ticket content, task descriptions, "what is this asking" questions, or raw context with no existing work.
-- If research is needed, conduct and present separately. Save substantial findings to `research/{topic-slug}.md` (self-contained: title, date, question, findings, sources).
+- If research is needed, conduct and present separately. Save substantial findings to `topics/<topic>/research-<slug>.md` (self-contained: title, date, question, findings, sources).
 - **Output:** scoped problem statement with initial level-of-effort signal
 
 **Hunch ("something feels off"):**
@@ -36,7 +36,7 @@ Detect the thinking pattern from `$ARGUMENTS` and context.
 **Research** ("look into X", "how does Y work", "what are the patterns for Z") **bypasses the main workflow:**
 - Triggered by: competitor/pattern inquiries, focused factual questions, "look into", "how does X handle", "what are the approaches for".
 - Conduct research autonomously — no Frame stop, no session note.
-- Save findings to `research/{topic-slug}.md` with: H1 title in the format `# Research: <title>` summarizing the research question, date, question, findings, key takeaways (2-3 bullets), sources (if applicable).
+- Save findings to `topics/<topic>/research-<slug>.md` with: H1 title in the format `# Research: <title>` summarizing the research question, date, question, findings, key takeaways (2-3 bullets), sources (if applicable).
 - Present a summary with key takeaways. The research artifact is the only output.
 
 If ambiguous, ask one interactive question (`AskUserQuestion` or `requestUserInput`): **A. Understand something** (orient), **B. Surface something** (hunch), **C. Explore a what-if**, **D. Decide between options**, **E. Research something** (research).
@@ -78,7 +78,7 @@ If no changes needed: skip to Capture.
 
 ## 5. Capture
 
-Write a session note to `thinking/YYYY-MM-DD-<topic-slug>.md` (create directory if needed), where `<topic-slug>` is 2–4 hyphenated words derived from the framed question (e.g., `thinking/2026-03-24-auth-token-expiry.md`).
+Write a session note to `topics/<topic>/thinking-YYYY-MM-DD-<slug>.md`, where `<slug>` is 2–4 hyphenated words derived from the framed question (e.g., `topics/auth-tokens/thinking-2026-03-24-auth-token-expiry.md`).
 
 Start the file with an H1 title in the format `# Thinking: <title>`, where `<title>` summarizes the session content. Example: `# Thinking: Should we expire auth tokens on role change?`
 
@@ -92,6 +92,17 @@ Start the file with an H1 title in the format `# Thinking: <title>`, where `<tit
 - **Open threads** — anything surfaced but not resolved
 
 **Anti-pattern: "This doesn't need structured thinking."** The temptation to skip framing is strongest on decisions that feel obvious. Those are exactly where unexamined assumptions do the most damage. The frame can be two sentences, but it must exist.
+
+## Topic Folder Convention
+
+All artifacts are saved under `topics/<topic>/`. Before the first save in a session:
+
+1. Scan `topics/` for existing folders.
+2. If one matches the current topic, propose reusing it: "I'll save to `topics/<folder>/` — sound right?"
+3. If none match, derive a 2-4 word hyphenated folder name from the topic and propose it.
+4. Create the directory on user confirmation.
+
+All file paths in this skill use `topics/<topic>/` as the root.
 
 ## Rules
 

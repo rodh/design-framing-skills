@@ -5,7 +5,7 @@ description: Use when you have a chosen direction and need to break it into prio
 
 ## Phase 1 — Understand
 
-Read the concept, brief, wireframes, or other artifacts the user points to. Scan CWD for related context — prior thinking sessions, research, test results — that informs scope decisions.
+Read the concept, brief, wireframes, or other artifacts the user points to. Scan `topics/` for related context — prior thinking sessions, research, test results — that informs scope decisions.
 
 Ask clarifying questions (one per `AskUserQuestion` or `requestUserInput` call, never batch). The test for each question: **would knowing this change how I'd scope this?** Stop when answers stop changing your thinking.
 
@@ -64,7 +64,7 @@ Present all tickets. **Stop and wait** for feedback before saving.
 
 ## Phase 5 — Capture
 
-Save to `scope-{slug}.md` in the current directory, where `{slug}` is 2-4 hyphenated words derived from the project or feature name.
+Save to `topics/<topic>/scope-<slug>.md`, where `<slug>` is 2-4 hyphenated words derived from the project or feature name.
 
 Start the file with an H1 title: `# Scope: <descriptive title>` (e.g., `# Scope: Onboarding Flow MVP`).
 
@@ -76,6 +76,17 @@ Structure:
 - **Open questions** — unknowns that need spikes or decisions before work starts
 
 **Anti-pattern: "Scope the whole vision."** Scoping works on a chosen direction, not a feature wish list. If you haven't converged on a direction, run `/ideation-partner` first. Scoping an unconverged design produces tickets nobody builds.
+
+## Topic Folder Convention
+
+All artifacts are saved under `topics/<topic>/`. Before the first save in a session:
+
+1. Scan `topics/` for existing folders.
+2. If one matches the current topic, propose reusing it: "I'll save to `topics/<folder>/` — sound right?"
+3. If none match, derive a 2-4 word hyphenated folder name from the topic and propose it.
+4. Create the directory on user confirmation.
+
+All file paths in this skill use `topics/<topic>/` as the root.
 
 ## Rules
 
