@@ -1,6 +1,6 @@
 # Design Framing Skills
 
-AI coding agent skills for the full design framing loop — reason through decisions, explore problem spaces, generate divergent directions, wireframe solutions, validate with simulated users, scope into buildable work, and pitch the result to stakeholders.
+AI coding agent skills for the design framing loop — reason through decisions, explore problem spaces, generate divergent directions, scope into buildable work, and pitch the result to stakeholders.
 
 ## Skills
 
@@ -10,11 +10,11 @@ AI coding agent skills for the full design framing loop — reason through decis
 
 ### Experimental skills
 
-**`/next-move-partner`** — Scan your design artifacts and recommend the highest-leverage next step. Shows a compact status map of what exists and what's missing, then suggests which skill to invoke and with what input. A quick diagnostic, not a workflow.
+**`/next-move-partner`** — Figure out what design move to make next when you're unclear where to focus or what's been missed. Scans artifacts, shows a compact status map, and recommends which skill to invoke.
 
-**`/pitch-partner`** — Reframe your design work for a specific audience and format. Takes briefs, concepts, or session notes and restructures them into one-pagers, async messages, tickets, or talking points — tuned to whether you're pitching leadership, a teammate, or a cross-functional partner.
+**`/pitch-partner`** — Communicate design work to a specific audience — stakeholders, teammates, clients, or cross-functional partners. Restructures artifacts into one-pagers, async messages, tickets, or talking points tuned to the reader's mental model.
 
-**`/scoping-partner`** — Break a chosen direction into prioritized scope tiers (MVP, should-have, nice-to-have) and draft tickets for the work. Decomposes features, sequences by dependencies, and produces Jira-style tickets with acceptance criteria and T-shirt sizing.
+**`/scoping-partner`** — Break a chosen direction into prioritized scope tiers (MVP, should-have, nice-to-have). Decomposes features, sequences by dependencies, and produces tickets with acceptance criteria and T-shirt sizing.
 
 ## Install
 
