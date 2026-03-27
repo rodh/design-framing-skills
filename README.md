@@ -6,17 +6,17 @@ AI coding agent skills for the design framing loop — reason through decisions,
 
 **`/orient-partner`** — Understand a ticket, task, or project context. Decomposes problems into constituent parts, maps the landscape, identifies hidden design complexity, and signals level of effort. Produces understanding; downstream skills produce action.
 
-**`/reasoning-partner`** — Reason through a decision, stress-test a hunch, or explore a what-if. Works with or without existing project context. Reads your codebase and docs to ground the conversation, then follows structured reasoning (evidence, stakes, steel-man, assumptions) to help you reach clarity.
-
 **`/research-partner`** — Look into a topic: competitor patterns, technical approaches, how something works, or focused factual questions. Produces self-contained research artifacts that feed into reasoning, ideation, and scoping.
+
+**`/reasoning-partner`** — Reason through a decision, stress-test a hunch, or explore a what-if. Works with or without existing project context. Reads your codebase and docs to ground the conversation, then follows structured reasoning (evidence, stakes, steel-man, assumptions) to help you reach clarity.
 
 **`/ideation-partner`** — Explore a problem space and generate genuinely different solution directions. Works from tickets, notes, screenshots, or a verbal description. Asks targeted questions to frame the problem, then produces multiple distinct concepts — not variations on one idea.
 
-**`/next-move-partner`** — Figure out what design move to make next when you're unclear where to focus or what's been missed. Scans artifacts, shows a compact status map, and recommends which skill to invoke.
+**`/scoping-partner`** — Break a chosen direction into prioritized scope tiers (MVP, should-have, nice-to-have). Decomposes features, sequences by dependencies, and produces tickets with acceptance criteria and T-shirt sizing.
 
 **`/pitch-partner`** — Communicate design work to a specific audience — stakeholders, teammates, clients, or cross-functional partners. Restructures artifacts into one-pagers, async messages, tickets, or talking points tuned to the reader's mental model.
 
-**`/scoping-partner`** — Break a chosen direction into prioritized scope tiers (MVP, should-have, nice-to-have). Decomposes features, sequences by dependencies, and produces tickets with acceptance criteria and T-shirt sizing.
+**`/next-move-partner`** — Figure out what design move to make next when you're unclear where to focus or what's been missed. Scans artifacts, shows a compact status map, and recommends which skill to invoke.
 
 ## How they fit together
 
