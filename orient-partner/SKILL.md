@@ -5,7 +5,7 @@ description: Use when you need to break down and map a ticket, task, or project 
 
 ## 1. Scope
 
-Ingest context from `$ARGUMENTS` — tickets, docs, task descriptions, conversation threads, flows. Scan CWD for related code, docs, existing `artifacts/**/orient-*.md` artifacts, `artifacts/**/reasoning-*.md` sessions, `artifacts/**/research-*.md` artifacts, plans, and recent commits. Read what's relevant — don't deep-read everything. If a prior artifact already covers this, surface it instead of re-decomposing.
+Ingest context from `$ARGUMENTS` — tickets, docs, task descriptions, conversation threads, flows. Scan CWD for related code, docs, existing `artifacts/**/orient-*.md` artifacts, `artifacts/**/thinking-*.md` sessions, `artifacts/**/research-*.md` artifacts, plans, and recent commits. Read what's relevant — don't deep-read everything. If a prior artifact already covers this, surface it instead of re-decomposing.
 
 Classify:
 
@@ -31,7 +31,7 @@ Four-part analysis:
 
 Present a scoped problem statement with 2-3 labeled next moves reflecting the actual situation. Suggest downstream skills as appropriate:
 
-- Reasoning through a decision or stress-testing assumptions (`/reasoning-partner` if available)
+- Thinking through a decision, tradeoff, or stress-testing assumptions (`/thinking-partner` if available)
 - Deeper investigation into unknowns (`/research-partner` if available)
 - Exploring solution directions (`/ideation-partner` if available)
 - Breaking work into prioritized scope (`/scoping-partner` if available)
