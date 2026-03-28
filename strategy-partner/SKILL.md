@@ -19,9 +19,13 @@ Identify 3-6 **design surface areas** that need attention. For each:
 
 Surface 2-4 **strategic questions** the design work needs to answer. These are the through-lines that connect surface areas — the questions whose answers would most change what you build.
 
-Ask 1-2 clarifying questions about gaps: constraints, timelines, existing work, stakeholder expectations. One question per `AskUserQuestion` or `requestUserInput` call.
+Present the surface areas and strategic questions first. Then ask 1-2 clarifying questions about gaps: constraints, timelines, existing work, stakeholder expectations. One question per `AskUserQuestion` or `requestUserInput` call.
+
+If the user says "just go" or similar, proceed with reasonable assumptions and flag them.
 
 **Stop and wait.**
+
+**Not for:** decomposing a problem you don't yet understand (`/orienting-partner`), working through a specific decision or tradeoff (`/thinking-partner`), or breaking a chosen direction into buildable tiers (`/scoping-partner`). Strategy-partner plans *what design work to do*, not *how to do it*.
 
 ## Phase 3 — Plan workstreams
 
