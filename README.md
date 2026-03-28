@@ -16,8 +16,6 @@ AI coding agent skills for the design framing loop — reason through decisions,
 
 **`/pitch-partner`** — Communicate design work to a specific audience — stakeholders, teammates, clients, or cross-functional partners. Restructures artifacts into one-pagers, async messages, tickets, or talking points tuned to the reader's mental model.
 
-**`/next-move-partner`** — Figure out what design move to make next when you're unclear where to focus or what's been missed. Scans artifacts, shows a compact status map, and recommends which skill to invoke.
-
 ## How they fit together
 
 The skills follow a natural design progression, though you can enter at any point:
@@ -28,8 +26,6 @@ Orient →  Research →  Think  →  Ideate →   Scope →  Pitch
 ```
 
 **Orient** maps the problem. **Research** fills knowledge gaps. **Thinking** works through decisions, hunches, tradeoffs, and assumptions. **Ideation** generates divergent directions. **Scoping** breaks a chosen direction into buildable tiers. **Pitch** communicates the result.
-
-Use `/next-move-partner` at any point to see where you are and what to do next.
 
 ## Install
 
