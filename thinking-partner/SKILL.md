@@ -1,6 +1,6 @@
 ---
 name: thinking-partner
-description: Use when you need to think something through — a decision, a hunch, a tradeoff, a strategy question, or anything that needs structured clarity before action
+description: Use when you need to think something through — weighing options, stress-testing a hunch, exploring a what-if, or working through a tradeoff that needs structured clarity before action
 ---
 
 ## 1. Read context
@@ -40,9 +40,13 @@ Read the request. Restate what we're thinking through.
 
 Present the frame: restated question + calibration + proposed moves. **Stop and wait** for confirmation or adjustment.
 
-If the request is ambiguous about what kind of thinking is needed, ask one question with labeled options (`AskUserQuestion` or `requestUserInput`) rather than guessing.
+If the request is ambiguous about what kind of thinking is needed, ask one question with labeled options rather than guessing.
 
 Calibration is a proposal, not a gate. If the user wants to skip straight to thinking, let them — but restate depth/shape so both sides know the plan.
+
+**Not for:** understanding a problem (`/orient-partner`), investigating facts (`/research-partner`), or generating divergent directions (`/ideation-partner`). Thinking-partner is for when context exists and you need to reason through it.
+
+**Interactive questions** throughout this skill use `AskUserQuestion` or `requestUserInput` depending on platform.
 
 ## 3. Think
 
@@ -60,7 +64,7 @@ Each pause = **stop and wait** — do not continue to the next phase in the same
 
 ## 4. Act
 
-If thinking leads to file changes: list each file and proposed change, get approval per file via interactive question (`AskUserQuestion` or `requestUserInput`) (approve / reject / modify), then apply.
+If thinking leads to file changes: list each file and proposed change, get approval per file (approve / reject / modify), then apply.
 
 If thinking surfaces that the user needs a different skill next, name it explicitly. Don't auto-invoke.
 
@@ -92,13 +96,11 @@ Skills save artifacts to `artifacts/`. Create the directory if it doesn't exist.
 
 - Be direct. No preamble, no filler. Labeled bullets for discrete items, prose for narrative.
 - Quote sources, don't summarize — the user needs to see exactly what you're referencing.
-- Steel-man all positions. Don't lead toward a predetermined answer.
 - When convergent, have a point of view. Propose approaches with trade-offs and lead with your recommendation.
 - Prefer labeled options (A/B/C) over open-ended questions — reduces friction and shows you've done enough thinking to enumerate the space.
 - Every piece of analysis maps to a named move. If you can't name the move, don't do it.
 - YAGNI: if thinking resolves without needing file changes, don't invent changes to make.
 - If thinking reveals an upstream problem, name it. Don't patch downstream files to work around it.
-- Calibration is a proposal, not a gate. Meet the user where they are.
 - Don't skip thinking because it "seems obvious." The user invoked it for a reason.
 
 $ARGUMENTS
