@@ -1,6 +1,6 @@
 # Design Framing Skills
 
-AI coding agent skills for the design framing loop — reason through decisions, explore problem spaces, generate divergent directions, scope into buildable work, and pitch the result to stakeholders.
+AI agent skills for the design framing loop — reason through decisions, explore problem spaces, generate divergent directions, scope into buildable work, and share the result.
 
 ## Skills
 
@@ -38,7 +38,7 @@ Sense — Strategize — Ideate — Scope — Share
 
 **Composable by design** — Skills connect through artifacts. Sensemaking feeds strategy; strategy feeds ideation; a chosen concept feeds scoping. Each skill scans for existing work and builds on it rather than starting from scratch.
 
-**Artifacts over conversations** — Every skill produces self-contained artifacts readable without conversation context. Outputs persist across sessions and travel across teams.
+**Artifacts over conversations** — Every skill produces self-contained artifacts in `artifacts/`, readable without conversation context. Outputs persist across sessions and travel across teams.
 
 ## Install
 
@@ -57,7 +57,8 @@ The install script detects supported platforms and symlinks each skill into the 
 ./install.sh uninstall   # Remove symlinks (leaves the clone intact)
 ```
 
-## Requirements
+## Usage
 
-- An AI coding agent that supports skills (e.g., [Claude Code](https://claude.com/claude-code), [Codex CLI](https://github.com/openai/codex))
-- Bash 3.2+ (macOS default works)
+Invoke any skill by name — e.g., `/sensemaking-partner [link or paste a ticket]`
+
+Skills scan the working directory for existing artifacts and build on prior work automatically.
